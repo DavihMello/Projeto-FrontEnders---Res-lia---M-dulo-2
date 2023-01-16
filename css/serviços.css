@@ -290,6 +290,10 @@ body {
   
   
   /* Estilos dos Planos */
+  .my-body{
+    display: flex;
+    background-color: #010d47;
+  }
   h1 {
     display: flex;
     text-align: center;
