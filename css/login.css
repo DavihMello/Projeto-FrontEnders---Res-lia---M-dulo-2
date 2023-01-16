@@ -533,6 +533,6 @@ input {
 }
 
 .tudo{
-  display: flex;
+  display: block;
   text-align: center;
 }
