@@ -533,6 +533,8 @@ input {
 }
 
 .tudo{
-  display: inline;
-  text-align: center;
+  display: flex;
+  margin-left: 40px;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
