@@ -318,7 +318,7 @@ img {
   padding: 2rem;
   width: 50%;
   display: inline-block;
-  left: 90px;
+  padding-left: 90px;
 }
 
 .form-main {
