@@ -249,8 +249,8 @@ img {
 .rectangle {
   display: flex;
 
-  width: 600px;
-
+  width: 400px;
+  left: 90px;
 
 }
 
