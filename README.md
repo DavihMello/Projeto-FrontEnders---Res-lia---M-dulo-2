@@ -21,6 +21,7 @@ O projeto consiste em um site que fornece blocos de códigos prontos para desenv
 
 ### Ferramentas utilizadas:
 
+- HTML
 - Javascript
 - CSS
 - Bootstrap
