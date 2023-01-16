@@ -250,7 +250,6 @@ img {
   display: flex;
 
   width: 400px;
-  left: 90px;
 
 }
 
@@ -318,6 +317,7 @@ img {
   background-color: #ffffff;
   padding: 2rem;
   width: 50%;
+  left: 90px;
 }
 
 .form-main {
