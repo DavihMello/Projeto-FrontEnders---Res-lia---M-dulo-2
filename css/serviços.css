@@ -290,3 +290,40 @@ body {
   
   
   /* Estilos dos Planos */
+  h1 {
+    display: flex;
+    text-align: center;
+  }
+  
+  /* #plano-1{
+    display: inline-block;
+    
+  } */
+  .mexer-pfvr {
+    display: inline-block;
+    justify-content: space-around;
+  
+    width: 1000px;
+    text-align: center;
+  
+  }
+  /* .col {
+    display: block;
+    text-align: center;
+  
+  } */
+  
+  /* h4 {
+    font-size: 800px;
+  } */
+  
+  /* .pricing-header {
+  
+    text-align: center;
+  
+  } */
+  
+  /* #colunas {
+    display: inline-block;
+    justify-content: center;
+  } */

@@ -41,9 +41,163 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+      #my-btn-1,
+      #my-btn-2,
+      #my-card,
+      #cabecalho-card {
+        background-color: #38c3da;
+      }
+  
+      * {
+        font-family: 'Open Sans', sans-serif;
+      }
+  
+      /* body {
+                margin: 4rem;
+            }  */
+  
+      .card__giratorio {
+        display: inline-block;
+        justify-content: space-evenly;
+        margin: 15px;
+      }
+  
+      .card__giratorio {
+  
+        background-color: transparent;
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;
+      }
+  
+      .card__giratorio-conteudo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+  
+      .card__giratorio:hover .card__giratorio-conteudo {
+        transform: rotateY(180deg);
+      }
+  
+      .card__giratorio-conteudo--frente,
+      .card__giratorio-conteudo--traseira {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+        border-radius: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+  
+      .card__giratorio-conteudo--frente {
+        background: linear-gradient(-229deg, #0093E9, #2a2ba1);
+        /*muda a cor da frente*/
+        /* background-color: #2a2ba1; */
+      }
+  
+      .card__giratorio-conteudo--traseira {
+        background: linear-gradient(229deg, #010d47, #2a2ba1);
+        background-color: rgb(197, 197, 197);
+        color: white;
+        font-family: Georgia;
+        transform: rotateY(180deg);
+      }
+  
+      .card__giratorio-conteudo--traseira h1,
+      .card__giratorio-conteudo--traseira p {
+        margin: 0;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+  
+      .card__giratorio-conteudo--traseira h1 {
+        font-size: 1.7rem;
+      }
+  
+      a {
+        /* border: 1px solid #8b80f9; */
+        border-radius: 3px;
+        padding: 1rem 2rem;
+        display: inline-block;
+        font-family: Verdana;
+        letter-spacing: -1px;
+        user-select: none;
+        /* color: #8b80f9;
+                box-shadow: #8b80f9 3px 3px 0px; */
+        transition: all .195s ease-in-out;
+        cursor: pointer;
+      }
+  
+      a:hover {
+        transform: translateX(5px) translateY(5px);
+        /* box-shadow: #8b80f9 7px 9px 0px; */
+      }
+  
+      #card-1 {
+        display: inline-block;
+        width: 400px;
+        height: 530px;
+      }
+  
+      #card-2 {
+        display: flex;
+        width: 400px;
+  
+        height: 530px;
+      }
+  
+      /* #card-3 {
+          display: inline-block;
+          width: 300px;
+          height: 500px;
+          width: 300;
+        } */
+  
+  
+      #container-div {
+        display: flex;
+        margin-left: 40px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        /* background-color: black; */
+      }
+    </style>
+
+
+
+
+
+
+
+
+
+
 </head>
 
-<body>
+<body class="my-body">
   <!-- Deixando o site responsivo -->
 
   <!-- Header -->
@@ -76,20 +230,310 @@
   <!-- ___________________________________________________________________________________________________ 
   conteudo-->
 
+
+
+
+
+
+
   <div class="titulo-bg">
     <div class="titulo container">
-      <h1>nossos planos<span class="ponto">.</span></h1>
+      <h1 style="color: #7425f0;">Nossos Planos<span class="ponto">.</span></h1>
     </div>
   </div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+    </svg>
+
+
+
+
+
+
+
+
+    </div>
+
     <main>
 
-  
+      <div id="container-div" class="mexer-pfvr">
+
+
+
+        <div id="card-1" class="card__giratorio">
+          <div class="card__giratorio-conteudo">
+            <div class="card__giratorio-conteudo--frente">
+              <!-- <img src="./ic-logo.png" alt="Logo Programador CS" class="logo"> -->
+              <h1 id="plano-1">Plano</h1>
+
+
+            </div>
+            <div class="card__giratorio-conteudo--traseira">
+              <!-- <img src="./ic-logo.png" alt="Logo Programador CS" class="logo"> -->
+              <div class="col">
+
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Básico</h4>
+                </div>
+
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$ 290<small class="text-muted fw-light">/mensal</small>
+                  </h1>
+                  <!-- <hr style="width: 290px;"> -->
+                  <ul style="text-align: left;" class="list-unstyled mt-3 mb-4">
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>HTML</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>CSS</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Suporte prioritário por e-mail</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Acesso à Central de Ajuda</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Suporte 24h</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Rede sociais</th>
+
+                  </ul>
+                  <br><br>
+                  <button type="button" id="my-btn-1" class="w-10 btn btn-lg btn-primary">Get
+                    started</button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="card-2" class="card__giratorio">
+          <div class="card__giratorio-conteudo">
+            <div class="card__giratorio-conteudo--frente">
+              <!-- <img src="./ic-logo.png" alt="Logo Programador CS" class="logo"> -->
+              <h1>Plano</h1>
+
+            </div>
+            <div class="card__giratorio-conteudo--traseira">
+              <!-- <img src="./ic-logo.png" alt="Logo Programador CS" class="logo"> -->
+              <div class="col">
+
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Premium</h4>
+                </div>
+
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$ 399<small class="text-muted fw-light">/mensal</small>
+                  </h1>
+                  <!-- <hr style="width: 290px;"> -->
+                  <ul style="text-align: left;" class="list-unstyled mt-3 mb-4">
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>HTML</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>CSS</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Suporte prioritário por e-mail</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>JS</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Bootstrap</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Acesso à Central de Ajuda</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Assistência especial</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Acesso ao servidor do Discord</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Suporte 24h</th>
+                    <br>
+                    <td><svg class="bi" width="24" height="24">
+                        <use xlink:href="#check" />
+                      </svg></td>
+                    <th>Rede sociais</th>
+                  </ul>
+                  <button type="button" id="my-btn-2" class="w-10 btn btn-lg btn-primary">Contact
+                    us</button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="card-3" class="card__giratorio">
+        <div class="card__giratorio-conteudo">
+          <div class="card__giratorio-conteudo--frente">
+            <img src="./ic-logo.png" alt="Logo Programador CS" class="logo"> 
+            <h1>Plano</h1>
+            <h1>Premium</h1>
+
+          </div>
+          <div class="card__giratorio-conteudo--traseira">
+            <img src="./ic-logo.png" alt="Logo Programador CS" class="logo"> 
+            <div class="col">
+
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal"
+                  style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                  Premium</h4>
+              </div>
+
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">R$ 399<small class="text-muted fw-light">/mensal</small>
+                </h1>
+                <hr style="width: 290px;"> 
+                <ul class="list-unstyled mt-3 mb-4">
+                  <td><svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg></td>
+                  <th>HTML</th>
+                  <br>
+                  <td><svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg></td>
+                  <th>CSS</th>
+                  <br>
+                  <td><svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg></td>
+                  <th>Suporte prioritário por e-mail</th>
+                  <br>
+                  <td><svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg></td>
+                  <th>Acesso à Central de Ajuda</th>
+                </ul>
+                <button type="button" id="my-btn-2" class="w-10 btn btn-lg btn-primary">Contact
+                  us</button>
+              </div>
+            </div> -->
+
+
+      </div>
+      </div>
+      </div>
+
+
+      </div>
 
 
 
 
 
-  </main>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Footer -->
   <!-- ___________________________________________________________________________________________________ -->
