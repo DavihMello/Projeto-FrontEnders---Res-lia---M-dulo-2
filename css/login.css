@@ -532,9 +532,9 @@ input {
   }
 }
 
-/* .tudo{
+.tudo{
   display: flex;
   margin-left: 40px;
   align-items: flex-start;
   justify-content: space-evenly;
-} */
+}
