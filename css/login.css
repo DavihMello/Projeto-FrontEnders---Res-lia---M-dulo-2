@@ -317,7 +317,7 @@ img {
   background-color: #ffffff;
   padding: 2rem;
   width: 50%;
-  display: inline;
+  display: inline-block;
   left: 90px;
 }
 
