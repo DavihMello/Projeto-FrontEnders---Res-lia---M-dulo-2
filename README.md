@@ -17,7 +17,7 @@ Em desenvolvimento ⚠️
 
 ### Para que serve o projeto
 
-O projeto consiste em um site que fornece blocos de códigos prontos para desenvolvedores/web designers.
+O projeto consiste em um site que fornece blocos de códigos prontos para desenvolvedores/web designers
 
 ### Ferramentas utilizadas:
 
